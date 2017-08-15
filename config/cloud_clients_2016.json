@@ -1,0 +1,66 @@
+{
+  "client-01": {
+    "sb_name": "62.110.196.104.bc.googleusercontent.com",
+    "sb_ip": "104.196.108.107",
+    "post_sb_name": "254.116.211.130.bc.googleusercontent.com",
+    "post_sb_ip" : "104.196.108.107",
+    "provider": "GCE",
+    "region": "South Carolina"
+  },
+  "client-02": {
+    "sb_name": "192.181.222.162.bc.googleusercontent.com",
+    "sb_ip": "162.222.181.192",
+    "post_sb_name": "12.191.197.104.bc.googleusercontent.com",
+    "post_sb_ip": "162.222.181.192",
+    "provider": "GCE",
+    "region": "Iowa"
+  },
+  "client-03":{
+    "sb_name": "107.108.196.104.bc.googleusercontent.com",
+    "sb_ip": "104.196.110.62",
+    "post_sb_name": "145.21.196.104.bc.googleusercontent.com",
+    "post_sb_ip": "104.196.110.62",
+    "provider": "GCE",
+    "region": "South Carolina"
+  },
+  "client-04":{
+    "sb_name": "33.55.154.104.bc.googleusercontent.com",
+    "sb_ip": "104.154.55.33",
+    "post_sb_name": "210.4.196.104.bc.googleusercontent.com",
+    "post_sb_ip": "104.154.55.33",
+    "provider": "GCE",
+    "region": "Iowa"
+  },
+  "client-05":{
+    "sb_name": "ec2-54-174-243-93.compute-1.amazonaws.com",
+    "sb_ip": "54.174.243.93",
+    "post_sb_name":"ec2-52-90-211-248.compute-1.amazonaws.com",
+    "post_sb_ip": "52.90.211.248",
+    "provider": "AWS",
+    "region": "Virginia"
+  },
+  "client-06":{
+    "sb_name": "ec2-52-53-236-171.us-west-1.compute.amazonaws.com",
+    "sb_ip": "52.23.236.171",
+    "post_sb_name": "ec2-54-153-77-222.us-west-1.compute.amazonaws.com",
+    "post_sb_ip": "54.153.77.222",
+    "provider": "AWS",
+    "region": "California"
+  },
+  "client-07":{
+    "sb_name": "40.76.86.65",
+    "post_sb_name": "40.117.34.90",
+    "sb_ip": "40.76.86.65",
+    "post_sb_ip": "40.117.34.90",
+    "provider": "Azure",
+    "region": "Virginia"
+  },
+  "client-08":{
+    "sb_name": "23.99.1.83",
+    "post_sb_name": "104.45.228.143",
+    "sb_ip": "23.99.1.83",
+    "post_sb_ip": "104.45.228.143",
+    "provider": "Azure",
+    "region": "California"
+  }
+}

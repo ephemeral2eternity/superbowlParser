@@ -1,0 +1,17 @@
+{
+  "superbowl":{
+    "start":1454887800,
+    "end":1454900400
+  },
+  "halftime":{
+    "start":1454893200,
+    "end":1454895000
+  },
+  "postsuperbowl":{
+    "start":1455492600,
+    "end":1455505200
+  }
+  ,
+  "advertisements":[
+  ]
+}

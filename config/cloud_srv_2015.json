@@ -1,0 +1,240 @@
+{
+  "aws01": {
+    "name": "aws01",
+    "sb_ip": "54.152.213.238",
+    "post_sb_ip" : "54.152.213.238",
+    "provider": "AWS",
+    "region": "North Virginia"
+  },
+  "aws02": {
+    "name": "aws02",
+    "sb_ip": "54.186.168.77",
+    "post_sb_ip" : "54.186.168.77",
+    "provider": "AWS",
+    "region": "Oregon"
+  },
+  "aws03": {
+    "name": "aws03",
+    "sb_ip": "54.153.43.107",
+    "post_sb_ip" : "54.153.43.107",
+    "provider": "AWS",
+    "region": "California"
+  },
+  "aws04": {
+    "name": "aws04",
+    "sb_ip": "54.77.113.86",
+    "post_sb_ip" : "54.77.113.86",
+    "provider": "AWS",
+    "region": "Ireland"
+  },
+  "aws05": {
+    "name": "aws05",
+    "sb_ip": "54.169.179.58",
+    "post_sb_ip" : "54.169.179.58",
+    "provider": "AWS",
+    "region": "Singapore"
+  },
+  "aws06": {
+    "name": "aws06",
+    "sb_ip": "54.64.91.44",
+    "post_sb_ip" : "54.64.91.44",
+    "provider": "AWS",
+    "region": "Tokyo"
+  },
+  "aws07": {
+    "name": "aws07",
+    "sb_ip": "54.153.153.121",
+    "post_sb_ip" : "54.153.153.121",
+    "provider": "AWS",
+    "region": "Sydney"
+  },
+  "aws08": {
+    "name": "aws08",
+    "sb_ip": "54.94.144.78",
+    "post_sb_ip" : "54.94.144.78",
+    "provider": "AWS",
+    "region": "Sao Paulo"
+  },
+  "az01":{
+    "name": "az01",
+    "sb_ip": "cache-01.cloudapp.net",
+    "post_sb_ip" : "cache-01.cloudapp.net",
+    "provider": "Azure",
+    "region": "Virginia"
+  },
+  "az02":{
+    "name": "az02",
+    "sb_ip": "cache-02.cloudapp.net",
+    "post_sb_ip" : "cache-02.cloudapp.net",
+    "provider": "Azure",
+    "region": "Iowa"
+  },
+  "az03":{
+    "name": "az03",
+    "sb_ip": "cache-03.cloudapp.net",
+    "post_sb_ip" : "cache-03.cloudapp.net",
+    "provider": "Azure",
+    "region": "Virginia"
+  },
+  "az04":{
+    "name": "az04",
+    "sb_ip": "cache-04.cloudapp.net",
+    "post_sb_ip" : "cache-04.cloudapp.net",
+    "provider": "Azure",
+    "region": "Texas"
+  },
+  "az05":{
+    "name": "az05",
+    "sb_ip": "cache-05.cloudapp.net",
+    "post_sb_ip" : "cache-05.cloudapp.net",
+    "provider": "Azure",
+    "region": "California"
+  },
+  "az06":{
+    "name": "az06",
+    "sb_ip": "cache-06.cloudapp.net",
+    "post_sb_ip" : "cache-06.cloudapp.net",
+    "provider": "Azure",
+    "region": "Ireland"
+  },
+  "az07":{
+    "name": "az07",
+    "sb_ip": "cache-07.cloudapp.net",
+    "post_sb_ip" : "cache-07.cloudapp.net",
+    "provider": "Azure",
+    "region": "Netherlands"
+  },
+  "az08":{
+    "name": "az08",
+    "sb_ip": "cache-08.cloudapp.net",
+    "post_sb_ip" : "cache-08.cloudapp.net",
+    "provider": "Azure",
+    "region": "Hong Kong"
+  },
+  "az09":{
+    "name": "az09",
+    "sb_ip": "cache-09.cloudapp.net",
+    "post_sb_ip" : "cache-09.cloudapp.net",
+    "provider": "Azure",
+    "region": "Singapore"
+  },
+  "az10":{
+    "name": "az10",
+    "sb_ip": "cache-10.cloudapp.net",
+    "post_sb_ip" : "cache-10.cloudapp.net",
+    "provider": "Azure",
+    "region": "Osaka Prefectur"
+  },
+  "gc01":{
+    "name": "gc01",
+    "sb_ip": "107.167.191.63",
+    "post_sb_ip" : "107.167.191.63",
+    "provider": "GCE",
+    "region": "Tai Wan"
+  },
+  "gc02":{
+    "name": "gc02",
+    "sb_ip": "107.167.182.111",
+    "post_sb_ip" : "107.167.182.111",
+    "provider": "GCE",
+    "region": "Tai Wan"
+  },
+  "gc03":{
+    "name": "gc03",
+    "sb_ip": "104.155.211.19",
+    "post_sb_ip" : "104.155.211.19",
+    "provider": "GCE",
+    "region": "Tai Wan"
+  },
+  "gc04":{
+    "name": "gc04",
+    "sb_ip": "104.155.194.20",
+    "post_sb_ip" : "104.155.194.20",
+    "provider": "GCE",
+    "region": "Tai Wan"
+  },
+  "gc05":{
+    "name": "gc05",
+    "sb_ip": "104.155.229.210",
+    "post_sb_ip" : "104.155.229.210",
+    "provider": "GCE",
+    "region": "Tai Wan"
+  },
+  "gc06":{
+    "name": "gc06",
+    "sb_ip": "104.155.225.107",
+    "post_sb_ip" : "104.155.225.107",
+    "provider": "GCE",
+    "region": "Tai Wan"
+  },
+  "gc07":{
+    "name": "gc07",
+    "sb_ip": "130.211.63.102",
+    "post_sb_ip" : "130.211.63.102",
+    "provider": "GCE",
+    "region": "Belgium"
+  },
+  "gc08":{
+    "name": "gc08",
+    "sb_ip": "130.211.95.77",
+    "post_sb_ip" : "130.211.95.77",
+    "provider": "GCE",
+    "region": "Belgium"
+  },
+  "gc09":{
+    "name": "gc09",
+    "sb_ip": "146.148.115.155",
+    "post_sb_ip" : "146.148.115.155",
+    "provider": "GCE",
+    "region": "Netherlands"
+  },
+  "gc10":{
+    "name": "gc10",
+    "sb_ip": "104.155.4.67",
+    "post_sb_ip" : "104.155.4.67",
+    "provider": "GCE",
+    "region": "Netherlands"
+  },
+  "gc11":{
+    "name": "gc11",
+    "sb_ip": "130.211.118.29",
+    "post_sb_ip" : "130.211.118.29",
+    "provider": "GCE",
+    "region": "Iowa"
+  },
+   "gc12":{
+    "name": "gc12",
+    "sb_ip": "146.148.89.8",
+    "post_sb_ip" : "146.148.89.8",
+    "provider": "GCE",
+    "region": "Iowa"
+  },
+  "gc13":{
+    "name": "gc13",
+    "sb_ip": "130.211.153.45",
+    "post_sb_ip" : "130.211.153.45",
+    "provider": "GCE",
+    "region": "Oklahoma"
+  },
+  "gc14":{
+    "name": "gc14",
+    "sb_ip": "104.154.61.126",
+    "post_sb_ip" : "104.154.61.126",
+    "provider": "GCE",
+    "region": "Oklahoma"
+  },
+  "gc15":{
+    "name": "gc15",
+    "sb_ip": "130.211.115.69",
+    "post_sb_ip" : "130.211.115.69",
+    "provider": "GCE",
+    "region": "Oklahoma"
+  },
+  "gc16":{
+    "name": "gc16",
+    "sb_ip": "104.154.54.212",
+    "post_sb_ip" : "104.154.54.212",
+    "provider": "GCE",
+    "region": "Oklahoma"
+  }
+}

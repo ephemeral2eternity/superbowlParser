@@ -1,0 +1,86 @@
+{
+  "aws-server": {
+    "name": "aws-server",
+    "sb_ip": "52.90.121.155",
+    "post_sb_ip" : "54.159.103.224",
+    "provider": "AWS",
+    "region": "California"
+  },
+  "gserver-01": {
+    "name": "gserver-01",
+    "sb_ip": "146.148.82.83",
+    "post_sb_ip": "104.197.165.32",
+    "provider": "GCE",
+    "region": "Iowa"
+  },
+  "gserver-02":{
+    "name": "gserver-02",
+    "sb_ip": "104.196.218.56",
+    "post_sb_ip": "104.196.11.109",
+    "provider": "GCE",
+    "region": "South Carolina"
+  },
+  "gserver-03":{
+    "name": "gserver-03",
+    "sb_ip": "104.198.11.151",
+    "post_sb_ip": "104.199.127.170",
+    "provider": "GCE",
+    "region": "Virginia"
+  },
+  "server-01":{
+    "name": "server-01",
+    "sb_ip": "40.69.135.145",
+    "post_sb_ip": "40.69.135.145",
+    "provider": "Azure",
+    "region": "Iowa"
+  },
+  "server-02":{
+    "name": "server-02",
+    "sb_ip": "13.90.151.24",
+    "post_sb_ip": "13.90.151.24",
+    "provider": "Azure",
+    "region": "Virginia"
+  },
+  "server-03":{
+    "name": "server-03",
+    "sb_ip": "52.184.187.152",
+    "post_sb_ip": "52.184.187.152",
+    "provider": "Azure",
+    "region": "Virginia"
+  },
+  "server-04":{
+    "name": "server-04",
+    "sb_ip": "157.55.140.182",
+    "post_sb_ip": "157.55.140.182",
+    "provider": "Azure",
+    "region": "Illinois"
+  },
+  "server-05":{
+    "name": "server-05",
+    "sb_ip": "13.85.80.42",
+    "post_sb_ip": "13.85.80.42",
+    "provider": "Azure",
+    "region": "Texas"
+  },
+  "server-06":{
+    "name": "server-06",
+    "sb_ip": "13.78.236.216",
+    "post_sb_ip": "13.78.236.216",
+    "provider": "Azure",
+    "region": "West Central US"
+  },
+  "server-07":{
+    "name": "server-07",
+    "sb_ip": "104.210.44.221",
+    "post_sb_ip": "104.210.44.221",
+    "provider": "Azure",
+    "region": "California"
+  },
+  "server-08":{
+    "name": "server-08",
+    "sb_ip": "52.183.56.41",
+    "post_sb_ip": "52.183.56.41",
+    "provider": "Azure",
+    "region": "West US 2"
+  }
+}

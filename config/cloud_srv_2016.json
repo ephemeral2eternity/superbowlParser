@@ -1,7 +1,58 @@
 {
   "cache-01": {
+    "name": "cache-01",
     "sb_ip": "104.196.21.142",
-    "post_sb_ip" : "104.197.196.186"
-
+    "post_sb_ip" : "104.197.196.186",
+    "provider": "GCE",
+    "region": "South Carolina"
+  },
+  "cache-02": {
+    "name": "cache-02",
+    "sb_ip": "146.148.81.27",
+    "post_sb_ip": "104.197.181.52",
+    "provider": "GCE",
+    "region": "Iowa"
+  },
+  "cache-03":{
+    "name": "cache-03",
+    "sb_ip": "104.196.55.249",
+    "post_sb_ip": "104.196.104.105",
+    "provider": "GCE",
+    "region": "South Carolina"
+  },
+  "cache-04":{
+    "name": "cache-04",
+    "sb_ip": "130.211.139.100",
+    "post_sb_ip": "104.197.196.165",
+    "provider": "GCE",
+    "region": "Iowa"
+  },
+  "cache-05":{
+    "name": "cache-05",
+    "sb_ip": "54.165.148.174",
+    "post_sb_ip": "54.85.157.213",
+    "provider": "AWS",
+    "region": "Virginia"
+  },
+  "cache-06":{
+    "name": "cache-06",
+    "sb_ip": "54.183.188.182",
+    "post_sb_ip": "54.183.6.192",
+    "provider": "AWS",
+    "region": "California"
+  },
+  "cache-07":{
+    "name": "cache-07",
+    "sb_ip": "40.76.65.234",
+    "post_sb_ip": "40.117.37.197",
+    "provider": "Azure",
+    "region": "Virginia"
+  },
+  "cache-08":{
+    "name": "cache-08",
+    "sb_ip": "40.118.164.148",
+    "post_sb_ip": "104.45.233.59",
+    "provider": "Azure",
+    "region": "California"
   }
 }
