@@ -4,6 +4,27 @@ from ts2datestr import *
 from convert_cloud_lats import *
 from drawlibs.draw_cdf import *
 
+def load_lats_by_provider(probe_key, period_key, year, provider):
+    cur_data_folder = todraw_folder + "/" + str(year) + "/" + period_key + "/" + probe_key + "/"
+    cloud_srvs = get_cloud_srvs_by_provider(year, provider)
+    lats_files = glob.glob(cur_data_folder + "*")
+
+    all_lats = []
+    for lat_file in lats_files:
+        cur_node = os.path.basename(lat_file)
+        cur_lat = loadJson(lat_file)
+        if cur_lat:
+            cur_df = pd.DataFrame(cur_lat)
+            for srv in cloud_srvs:
+                print("Get the latency file from %s to %s. " % (cur_node, srv))
+                denoted_df_ind = cur_df[srv].between(0, 500, inclusive=False)
+                denoted_df = cur_df[denoted_df_ind][srv]
+                # denoted_df = cur_df[srv]
+                denoted_df_values = denoted_df.tolist()
+                all_lats.extend(denoted_df_values)
+
+    return all_lats
+
 def load_mn_lats_by_provider(probe_key, period_key, year, provider):
     cur_data_folder = todraw_folder + "/" + str(year) + "/" + period_key + "/" + probe_key + "/"
     cloud_srvs = get_cloud_srvs_by_provider(year, provider)
@@ -21,6 +42,29 @@ def load_mn_lats_by_provider(probe_key, period_key, year, provider):
                 denoted_df_mn = denoted_df.mean()
                 all_lats.append(denoted_df_mn)
                 print("Get the mean latency from %s to %s as %.4f ms. " %(cur_node, srv, denoted_df_mn))
+
+    return all_lats
+
+def load_lats_by_srv(probe_key, period_key, year, srvs):
+    cur_data_folder = todraw_folder + "/" + str(year) + "/" + period_key + "/" + probe_key + "/"
+    lats_files = glob.glob(cur_data_folder + "*")
+
+    all_lats = []
+    for lat_file in lats_files:
+        cur_node = os.path.basename(lat_file)
+        cur_lat = loadJson(lat_file)
+        if cur_lat:
+            cur_df = pd.DataFrame(cur_lat)
+            for srv in srvs:
+                if srv in list(cur_df):
+                    print("Get the latency file from %s to %s. " % (cur_node, srv))
+                    denoted_df_ind = cur_df[srv].between(0, 500, inclusive=False)
+                    denoted_df = cur_df[denoted_df_ind][srv]
+                    # denoted_df = cur_df[srv]
+                    denoted_df_list = denoted_df.tolist()
+                    if denoted_df_list:
+                        all_lats.extend(denoted_df_list)
+                        # print("Get the mean latency from %s to %s as %.4f ms. " %(cur_node, srv, denoted_df_mn))
 
     return all_lats
 
@@ -45,6 +89,27 @@ def load_mn_lats_by_srv(probe_key, period_key, year, srvs):
 
     return all_lats
 
+def load_std_lats_by_srv(probe_key, period_key, year, srvs):
+    cur_data_folder = todraw_folder + "/" + str(year) + "/" + period_key + "/" + probe_key + "/"
+    lats_files = glob.glob(cur_data_folder + "*")
+
+    all_std_lats = []
+    for lat_file in lats_files:
+        cur_node = os.path.basename(lat_file)
+        cur_lat = loadJson(lat_file)
+        if cur_lat:
+            cur_df = pd.DataFrame(cur_lat)
+            for srv in srvs:
+                if srv in list(cur_df):
+                    print("Get the latency file from %s to %s. " % (cur_node, srv))
+                    denoted_df = cur_df[srv]
+                    denoted_df_std = denoted_df.std()
+                    if denoted_df_std:
+                        all_std_lats.append(denoted_df_std)
+                        print("Get the std latency from %s to %s as %.4f ms. " %(cur_node, srv, denoted_df_std))
+
+    return all_std_lats
+
 def load_lats_by_client_srv(probe_key, period_key, year, client, server):
     cur_data_folder = todraw_folder + "/" + str(year) + "/" + period_key + "/" + probe_key + "/"
     client_names = loadJson("./config/cloud_clients_" + str(year) + ".json")
@@ -62,9 +127,12 @@ def load_lats_by_client_srv(probe_key, period_key, year, client, server):
 
 
 
-def get_cloud_srvs_by_provider(year, provider):
+def get_cloud_srvs_by_provider(year, provider="ALL"):
     cloud_srvs = loadJson("./config/cloud_srv_" + str(year) + ".json")
     cloud_srv_keys = []
+    if provider == "ALL":
+        return cloud_srvs.keys()
+
     for srv_key in cloud_srvs:
         if cloud_srvs[srv_key]["provider"] == provider:
             cloud_srv_keys.append(srv_key)
